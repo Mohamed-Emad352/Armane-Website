@@ -85,7 +85,7 @@ window.addEventListener('scroll', () => {
 
 
 // Countdown
-let countdownDate = new Date("Jan 29, 2021 21:37:25").getTime();
+let countdownDate = new Date().getTime() + 1000000000;
 let countdownInterval = setInterval(() => {
     let now = new Date().getTime();
     let distance = countdownDate - now;
